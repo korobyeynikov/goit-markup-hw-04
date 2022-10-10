@@ -1,6 +1,7 @@
 :root {
+  --backgraund-hero: #c4c4c4;
   --bgn-btnaction: #188ce8;
-  --bgn-hero: #2f303a;
+  --bgn-footer: #2f303a;
   --bgn-section: #f5f4fa;
   --bgn-port: #eeeeee;
   --main-color: #757575;
@@ -145,7 +146,7 @@ body {
   padding-bottom: 200px;
 
   text-align: center;
-  background: var(--bgn-hero);
+  background: var(--backgraund-hero);
 }
 
 .hero-title {
@@ -240,11 +241,11 @@ body {
 
 .title-list {
   display: flex;
-
+  flex-wrap: nowrap;
   gap: 30px;
 }
 .list-section {
-  width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .subtitle {
@@ -342,7 +343,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background: var(--bgn-hero);
+  background: var(--bgn-footer);
 }
 .contacts-item {
   margin-bottom: 9px;
