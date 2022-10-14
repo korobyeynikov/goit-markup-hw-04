@@ -102,12 +102,12 @@ body {
   display: flex;
 }
 
-.header-list,
-.header-list-contacts {
+.header-list {
   gap: 50px;
 }
 .header-list-contacts {
   margin-left: auto;
+  gap: 30px;
 }
 .header-item,
 .header-mail,
@@ -131,6 +131,20 @@ body {
   color: var(--main-color);
 }
 
+.mail-icon-envelope {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: sub;
+  fill: currentColor;
+}
+.tel-icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  fill: currentColor;
+}
 .current,
 .header-link:hover,
 .header-link:focus,
@@ -140,13 +154,24 @@ body {
 .header-tel:focus {
   color: var(--accent-color);
 }
+
 /* герой */
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--backgraund-hero);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   padding-top: 200px;
   padding-bottom: 200px;
 
   text-align: center;
-  background: var(--backgraund-hero);
 }
 
 .hero-title {
@@ -246,6 +271,13 @@ body {
 }
 .list-section {
   flex-basis: calc((100% - 90px) / 4);
+}
+.section-icon {
+  width: 70px;
+  height: 70px;
+  padding: 25px 100px;
+  background: var(--bgn-section);
+  border-radius: 4px;
 }
 
 .subtitle {
