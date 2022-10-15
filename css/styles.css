@@ -125,17 +125,18 @@ body {
 }
 .header-mail,
 .header-tel {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
   color: var(--main-color);
 }
 
 .mail-icon-envelope {
   width: 16px;
-  height: 16px;
+  height: 12px;
   margin-right: 10px;
-  vertical-align: sub;
+
   fill: currentColor;
 }
 .tel-icon-smartphone {
@@ -273,6 +274,7 @@ body {
   flex-basis: calc((100% - 90px) / 4);
 }
 .section-icon {
+  box-sizing: content-box;
   width: 70px;
   height: 70px;
   padding: 25px 100px;
@@ -363,12 +365,27 @@ body {
   color: var(--brand-color);
 }
 .lead-card {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--main-color);
+}
+.link-card {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-icon {
+  width: 44px;
+  height: 44px;
+}
+.icon-card {
+  width: 20px;
+  height: 20px;
 }
 /* футер */
 .basement {
