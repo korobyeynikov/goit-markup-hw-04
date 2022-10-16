@@ -1,4 +1,6 @@
 :root {
+  --social-color: rgba(255, 255, 255, 0.1);
+  --color-icon: #afb1b8;
   --backgraund-hero: #c4c4c4;
   --bgn-btnaction: #188ce8;
   --bgn-footer: #2f303a;
@@ -379,13 +381,31 @@ body {
   justify-content: center;
   gap: 10px;
 }
-.team-icon {
+.btn-footer,
+.btn-card {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
   width: 44px;
   height: 44px;
+
+  border-radius: 50%;
+}
+
+.btn-card {
+  color: var(--color-icon);
+}
+
+.btn-footer:hover,
+.btn-footer:focus,
+.btn-card:hover,
+.btn-card:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 .icon-card {
-  width: 20px;
-  height: 20px;
+  fill: currentColor;
 }
 /* футер */
 .basement {
@@ -393,6 +413,15 @@ body {
   padding-bottom: 60px;
 
   background: var(--bgn-footer);
+}
+.footer-section {
+  display: flex;
+}
+.contact-section {
+  margin-right: 70px;
+}
+.contacts {
+  width: 231px;
 }
 .contacts-item {
   margin-bottom: 9px;
@@ -421,7 +450,28 @@ body {
 .contacts-tel:focus {
   color: var(--accent-color);
 }
+.social {
+  padding-top: 12px;
+}
+.lead-footer {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+  color: var(--secondary-color);
+}
+.link-footer {
+  display: flex;
+
+  gap: 10px;
+}
+.btn-footer {
+  background: var(--social-color);
+  color: var(--secondary-color);
+}
 /* портфоліо */
 
 .heading-title {
@@ -438,7 +488,11 @@ body {
 
   gap: 30px;
 }
-
+.heading-item:hover,
+.heading-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .title-heading {
   margin-bottom: 4px;
 
