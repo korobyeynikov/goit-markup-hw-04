@@ -384,9 +384,7 @@ body {
 .btn-footer,
 .btn-card {
   display: flex;
-  justify-content: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 12px;
   width: 44px;
   height: 44px;
 
@@ -405,6 +403,36 @@ body {
   background-color: var(--accent-color);
 }
 .icon-card {
+  fill: currentColor;
+}
+.regular-clients {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.reg-client {
+  display: flex;
+  gap: 30px;
+}
+.client {
+  display: flex;
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
+  color: var(--color-icon);
+  border: 1px solid var(--color-icon);
+  border-radius: 4px;
+}
+.client:hover,
+.client:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.client-icon {
   fill: currentColor;
 }
 /* футер */
@@ -457,7 +485,7 @@ body {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
