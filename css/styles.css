@@ -60,7 +60,7 @@ body {
 }
 /* хедер */
 .header {
-  border: 1px solid var(--border-col);
+  border-bottom: 1px solid var(--border-col);
 }
 
 .header-navigation,
